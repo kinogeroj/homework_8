@@ -49,18 +49,31 @@ def run_calc() -> int:
         run_calc()
     
     elif mode == '3':
+        
         expr = view.get_expr()
+        
         result = model.simpify_pol(expr)
+        
         view.show_res(result)
+        
         logger.log_exec(expr, result)
+
+        input('Нажмите Enter, чтобы продолжить ...')
+        
+        run_calc()
     
     elif mode == '4':
         
         history = logger.get_history()
         
         view.show_history(history)
+        
+        input('Нажмите Enter, чтобы продолжить ...')
+        
+        run_calc()
     
     elif mode == '5':
+        
         exit
 
     else:

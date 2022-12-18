@@ -4,28 +4,32 @@ import sympy
 
 x = sympy.Symbol('x')
 
-def execute_expr(expr: str) -> str:         # (5+3)*10 -> 80
+def execute_expr(expr: str) -> str:
     
     """Принимает на вход строку-пример. Возвращает результат примера."""
 
-    answer = sympy.solve(expr)
+    result = sympy.nsimplify(expr)
 
-    return answer
+    return result
 
-def solve_eq(expr: str) -> str:              # x**3 - 8 = 0 -> "2"
-                                             # x**2 - 1 = 0 -> "1,-1"
+def solve_eq(expr: str) -> str:
+ 
     """Принимает на вход уравнение в виде строки. Возвращает список корней уравнения в строку с разделителем."""
     
     try:
         
-        answer = sympy.solve(expr, x)
+        result = sympy.solve(expr, x)
 
-        return answer
+        return result
     
     except ValueError:
 
         print('Неправильные вводные данные')
 
-def simpify_pol(expr: str) -> str:           # x**2 + 3*x**2 + 4 -> 4*x**2 + 4
+def simpify_pol(expr: str) -> str:
+
     """"Упрощает введенный многочлен"""
-    pass
+
+    result = sympy.simplify(expr)
+
+    return result

@@ -6,7 +6,7 @@ def log_exec(expr: str, result: str):
     
     """Записывает в файл результат вычислений в виде |задача -> ответ|."""
     
-    log = ('[' + expr + ' -> ' + result + ']\n')
+    log = ('[' + str(expr) + ' -> ' + str(result).replace('[]', '') + ']\n')
 
     with open('log.txt', 'a', encoding = 'utf-8') as f:
         f.writelines(log)

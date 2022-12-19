@@ -21,6 +21,8 @@ def get_history() -> str:
 
         if len(file_contents) == 0:
             
+            print()
+            
             print('Список операций пуст!')
         
         else:

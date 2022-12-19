@@ -56,8 +56,13 @@ def show_history(history: str) -> str:
     
     """Выводит истроию оперций."""
     
-    print()
-
-    print('История операций:')
-
-    print(history)
+    if history == None:
+        
+        print()
+    
+    else:
+        print()
+        
+        print('История операций:')
+        
+        print(history)

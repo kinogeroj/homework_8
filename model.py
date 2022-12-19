@@ -24,11 +24,11 @@ def solve_eq(expr: str) -> str:
     
     except ValueError:
 
-        print('Неправильные вводные данные')
+        print('Неправильные вводные данные.')
 
 def simpify_pol(expr: str) -> str:
 
-    """"Упрощает введенный многочлен"""
+    """"Упрощает введенный многочлен."""
 
     result = sympy.simplify(expr)
 

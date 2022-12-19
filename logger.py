@@ -2,7 +2,7 @@
 
 file_name = 'log.txt'
 
-def log_exec(expr: str, result: str):
+def log_exec(expr: str, result: str) -> str:
     
     """Записывает в файл результат вычислений в виде |задача -> ответ|."""
     
@@ -21,7 +21,7 @@ def get_history() -> str:
 
         if len(file_contents) == 0:
             
-            print('Список логов пуст!')
+            print('Список операций пуст!')
         
         else:
             

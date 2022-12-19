@@ -4,7 +4,7 @@ import os
 
 def choose() -> str:
 
-    """"Выбор режима работы приложения"""
+    """"Выбор режима работы приложения."""
 
     os.system('cls')
 
@@ -34,7 +34,7 @@ def get_expr() -> str:
 
 def show_res(result: str) -> str:
 
-    """Выводит результат"""
+    """Выводит результат."""
 
     print()
 
@@ -42,7 +42,7 @@ def show_res(result: str) -> str:
 
     print()
 
-def erorr_mode():
+def erorr_mode() -> str:
 
     """Выводит сообщение об ошибке выбора режима."""
 
@@ -52,7 +52,7 @@ def erorr_mode():
 
     print()
 
-def show_history(history: str):
+def show_history(history: str) -> str:
     
     """Выводит истроию оперций."""
     
